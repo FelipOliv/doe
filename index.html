@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MaratonaDev | Doe sangue, doe vida</title>
+        <link rel="stylesheet" href="/app.css">
+        <link rel="shortcut icon" href="https://images.emojiterra.com/twitter/v12/512px/1fa78.png" type="image/x-icon">
+    </head>
+
+    <body>
+
+        <main id="app">
+
+            <header class="header">
+                <img src="/logo.png" alt="DOE" />
+
+                <h2>A sua doação importa</h1>
+
+                <p>A cada <span>1</span> doação, <span>3</span> vidas são sauvas</p>
+                <p>Mais de <span>38.000</span> doações são necessárias <span>todos os dias</span></p>
+                <p><span>Apenas 1,9%</span> da população brasileira doa sangue</p>
+
+                <button>quero ajudar</button>
+            </header>
+
+            <div class="donors-container">
+                <h2>Últimos <span>doadores</span></h2>
+                <section class="donors">
+
+                    {% for donor in donors %}
+
+                        <div class="donor">
+                            <div class="blood">{{ donor.blood }}</div>
+                            <p>{{ donor.name }}</p>
+                        </div>
+
+                    {% endfor %}
+                </section>
+            </d>
+
+            <footer>
+                Com ❤ FelipOliv
+            </footer>
+
+
+            <div class="modal-form hide">
+                <section class="form hide content">
+                    <h2>Entre na lista de doadores</h2>
+                    <form action="/" method="POST">
+                        <input type="text" name="name" placeholder="Nome Completo" />
+                        <input type="text" name="email" placeholder="E-mail" />
+                        <input type="text" name="blood" placeholder="Tipo sanguíneo" />
+                        <button>quero ajudar</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </body>
+
+    <script src="/app.js"></script>
+</html>

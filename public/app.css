@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#app
+{
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+#app .header,
+#app .donors-container
+{
+    min-width: 500px;
+    max-width: 500px;
+    margin-bottom: 0 auto;
+    text-align: center;
+}
+
+header img
+{
+    max-width: 120px;
+    /* margin: 50px 0; */
+}
+
+h2
+{
+    font-weight: 300;
+    font-size: 30px;
+    margin: 1rem 0;
+}
+
+header p
+{
+    font-weight: 500;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+
+header p span
+{
+    color: #ff4f4f;
+}
+
+header button
+{
+    margin: 1rem 0 0 0;
+}
+
+header button, form button
+{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border: none;
+    background: none;
+    height: 50px;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    outline: 0;
+    color: #ffffff;
+    background-color: #ff4f4f;
+    border-radius: 3px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+header button:hover,
+header button:active,
+header button:focus,
+form button:hover,
+form button:active,
+form button:focus
+{
+    background-color: #fd6868 !important
+}
+
+.donors
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-form
+{
+    position: absolute;
+    background-color: #000000aa;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form section
+{
+    background-color: #fff;
+    padding: 1rem 4rem;
+    border-radius: 3px;
+
+}
+
+.modal-form section form input
+{
+    display: block;
+    margin-bottom: 5px;
+
+    background: none;
+    border: none;
+    
+    background-color: #fbfbfb;
+    border: 1px solid transparent;
+    
+    height: 50px;
+    width: 100%;
+
+    padding: 1rem;
+    font-size: 12px;
+    font-weight: 400;
+    outline: 0;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+.modal-form section form input:focus
+{
+    border-color: #ff4f4f;
+}
+
+.modal-form section form button
+{
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.modal-form.hide
+{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.blood
+{
+    color: #ff4f4f;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.blood::before
+{
+    content: "";
+    background-color: #ff4f4f11;
+
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    transform: rotate(-45deg);
+}
+
+
+.donor p
+{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.donors-container h2
+{
+    margin-bottom: 2rem !important;
+}
+
+footer
+{
+    margin-top: auto;
+    padding: 16px;
+}
