@@ -6,3 +6,6 @@
 ### Tecnologias usadas:
 - Express
 - Nunjucks
+- pg (node)
+- postgres SQL
+- NodeJS
